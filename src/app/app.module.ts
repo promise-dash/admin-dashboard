@@ -17,6 +17,8 @@ import { UserComponent } from './routes/user/user.component';
 import { CreateUserComponent } from './routes/create-user/create-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditUserComponent } from './routes/edit-user/edit-user.component';
+import { ProductsComponent } from './routes/products/products.component';
+import { CartComponent } from './routes/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { EditUserComponent } from './routes/edit-user/edit-user.component';
     UserComponent,
     CreateUserComponent,
     EditUserComponent,
+    ProductsComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

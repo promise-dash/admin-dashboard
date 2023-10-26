@@ -163,28 +163,20 @@
             </div>
         </nav>
 
-        <a routerLink="/user/create" style="width: 10%;">
-            <button class="btn btn-primary mt-5 p-2" style="width: 100%">Create</button>
-        </a>
-
         <table class="table table-striped mt-4">
             <thead>
               <tr>
                 <th scope="col">Id</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Email</th>
+                <th scope="col">Name</th>
               </tr>
             </thead>
-            <tbody *ngFor="let user of this.userService.userList">
+            <tbody *ngFor="let product of this.productService.productList">
               <tr>
-                <th scope="row">{{user.id}}</th>
-                <td>{{user.firstName}}</td>
-                <td>{{user.lastName}}</td>
-                <td>{{user.email}}</td>
+                <th scope="row">{{product.id}}</th>
+                <td>{{product.name}}</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, consequuntur?</td>
                 <td class="d-flex gap-3">
-                    <button class="btn btn-primary" (click)="handleEdit(user.id)">Edit</button>
-                    <button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>
+                    <button class="btn btn-primary" (click)="handleClick(product)">Add to cart</button>
                 </td>
               </tr>
             </tbody>

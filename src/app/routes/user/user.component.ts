@@ -8,10 +8,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-  userData: Array<any> = [];
 
-  constructor(private userService: UserService, private router: Router){
-    this.userData = userService.userList;
+  constructor(public userService: UserService, private router: Router){
   }
 
   handleEdit(id: number){

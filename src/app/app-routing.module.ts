@@ -6,6 +6,8 @@ import { RegisterComponent } from './routes/register/register.component';
 import { UserComponent } from './routes/user/user.component';
 import { CreateUserComponent } from './routes/create-user/create-user.component';
 import { EditUserComponent } from './routes/edit-user/edit-user.component';
+import { ProductsComponent } from './routes/products/products.component';
+import { CartComponent } from './routes/cart/cart.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'users', component: UserComponent},
   {path: 'user/create', component: CreateUserComponent},
   {path: 'user/edit/:id', component: EditUserComponent},
+  {path: 'products', component: ProductsComponent},
+  {path: 'cart', component: CartComponent},
 ];
 
 @NgModule({
